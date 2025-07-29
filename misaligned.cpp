@@ -15,7 +15,9 @@ int printColorMap() {
 
 void testPrintColorMap() {
     std::cout << "\nPrint color map test\n"; 
+    majorColor[2] = "Black";
+    minorColor[4] = "Slate";
     int result = printColorMap();
-    assert(result == 25);
+    assert(result == 15);
     std::cout << "All is well (maybe!)\n";
 }
