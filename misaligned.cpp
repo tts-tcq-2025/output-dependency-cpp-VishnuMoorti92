@@ -34,7 +34,7 @@ std::string formatColorMapLine(const ColorPair& entry) {
 void printOnConsole(std::string& lineContent){
   std::cout<<lineContent;
 }
-int printColorMap(std::function<void(std::string&) printFn)
+int printColorMap(std::function<void(std::string&)> printFn)
 {
     auto colorMap = generateColorMap();  
     for (ColorPair &entry : colorMap) 
@@ -43,4 +43,5 @@ int printColorMap(std::function<void(std::string&) printFn)
     }
     return colorMap.size();
 }
+
 
