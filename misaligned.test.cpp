@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <cassert>
+#include <sstream>
 
 std::vector<std::string> generatedMannual;
 std::vector<std::string> actualMannual;
