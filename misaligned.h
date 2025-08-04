@@ -1,2 +1,2 @@
 #include<functional>
-int printColorMap(std::function<void(std::string&)) ;
+int printColorMap(std::function<void(std::string&) printFnc) ;
