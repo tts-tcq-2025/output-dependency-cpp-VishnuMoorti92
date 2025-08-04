@@ -37,11 +37,12 @@ void printOnConsole(std::string& lineContent){
 int printColorMap(std::function<void(std::string&)> printFn)
 {
     auto colorMap = generateColorMap();  
-    for (ColorPair &entry : colorMap) 
-    {
-        printFn(formatColorMapLine(entry) << "\n");
+    for (ColorPair& entry : colorMap) {
+        std::string line = formatColorMapLine(entry) + "\n";
+        printFn(line);
     }
     return colorMap.size();
 }
+
 
 
