@@ -22,7 +22,7 @@ void testPrintColorMap() {
             oss << index << " | " << majorColor[i] << " | " << minorColor[j] << "\n";
             actualMannual.push_back(oss.str());
         }
-
+    }
     int size = printColorMap(FakeVersionOfPrintFunction);
     assert(size == 25);
     assert(generatedMannual == actualMannual);   
